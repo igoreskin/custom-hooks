@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import ToggleComponent from "./components/ToggleComponent";
+import UpdateComponent from "./components/UpdateComponent";
+import ArrayComponent from "./components/ArrayComponent";
+import EffectComponent from "./components/EffectComponent";
+import PreviousComponent from "./components/PreviousComponent";
+import TwoValueToggleComponent from "./components/TwoValueToggleComponent";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ToggleComponent />
+      <div style={{ height: "50px" }}></div>
+      <UpdateComponent />
+      <div style={{ height: "50px" }}></div>
+      <ArrayComponent />
+      <div style={{ height: "50px" }}></div>
+      <EffectComponent />
+      <div style={{ height: "50px" }}></div>
+      <PreviousComponent />
+      <div style={{ height: "50px" }}></div>
+      <TwoValueToggleComponent />
     </div>
   );
 }
